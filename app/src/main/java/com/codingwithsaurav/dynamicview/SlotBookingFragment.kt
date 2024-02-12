@@ -15,19 +15,19 @@ import androidx.core.view.isVisible
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.Fragment
-import com.codingwithsaurav.dynamicview.databinding.FragmentCalendarBinding
+import com.codingwithsaurav.dynamicview.databinding.FragmentSlotBookingBinding
 import com.codingwithsaurav.dynamicview.databinding.RowAddScheduleBinding
 import com.google.android.material.textfield.TextInputEditText
 import java.util.Calendar
 import java.util.Locale
 
 
-class CalendarFragment : Fragment() {
+class SlotBookingFragment : Fragment() {
 
     private var scheduledList: ArrayList<Schedule> = ArrayList()
     private var durationList: MutableList<String?> = ArrayList()
-    private var _binding: FragmentCalendarBinding? = null
-    private val binding: FragmentCalendarBinding
+    private var _binding: FragmentSlotBookingBinding? = null
+    private val binding: FragmentSlotBookingBinding
         get() = requireNotNull(_binding)
     private var calendar: Calendar?= null
 
@@ -35,7 +35,7 @@ class CalendarFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentCalendarBinding.inflate(inflater, container, false)
+        _binding = FragmentSlotBookingBinding.inflate(inflater, container, false)
         return binding.root
     }
 
