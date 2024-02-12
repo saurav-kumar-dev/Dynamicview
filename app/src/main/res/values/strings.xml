@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">DynamicView</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="_time_placeholder">--:--</string>
+    <string name="set_time">Set Time</string>
+    <string name="submit_list">Submit List</string>
 </resources>
